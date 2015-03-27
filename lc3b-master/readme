@@ -1,0 +1,5 @@
+Making a verilog model of the LC-3b toy CPU
+
+see page 7 of http://users.ece.utexas.edu/~patt/07s.360N/handouts/360n.appC.pdf
+
+TODO: add global reset to everything

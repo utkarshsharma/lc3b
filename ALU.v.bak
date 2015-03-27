@@ -1,0 +1,15 @@
+module alu(opcode, A1, A2, D, N, Z, P;)
+
+input  wire [3:0] opcode;  // operation
+input  wire [15:0] A1;   // first input
+input  wire [15:0] A2;   // second input
+output wire [15:0] D;  // output
+output wire N, P, Z;
+ 
+   assign out = (opcode == 0001) ? A1 + A2 :
+                (opcode == 0101) ? A1 & A2 :
+                (opcode == 1001) ? A1 ^ A2 : A1;
+	assign Z	= (out == 16b'0)	?	1 : 0;
+	assign P	= (out > 16b'0)	? 1 : 0;
+	assign N	= (out < 16b'0) 	? 1 : 0;
+endmodule

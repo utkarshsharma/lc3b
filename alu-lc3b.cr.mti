@@ -1,0 +1,15 @@
+{U:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v} {1 {vlog -nostats -work alu {U:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} {U:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v} {1 {vlog -nostats -work alu {U:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v}
+Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}}

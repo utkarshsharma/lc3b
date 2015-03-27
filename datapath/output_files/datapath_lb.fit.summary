@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Oct 20 05:45:27 2014
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : datapath_lb
+Top-level Entity Name : datapath_lb
+Family : MAX V
+Device : 5M570ZF256C4
+Timing Models : Final
+Total logic elements : 62 / 570 ( 11 % )
+Total pins : 134 / 159 ( 84 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

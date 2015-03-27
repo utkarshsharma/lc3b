@@ -1,0 +1,320 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.8V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "datapath_lb"  ASSIGNED TO AN: 5M570ZF256C4
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+to_ctrlpth[10]               : A2        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : A3        : power  :                   : 3.3V    : 2         :                
+memory_datain[1]             : A4        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[7]                : A5        : output : 3.3-V LVTTL       :         : 2         : N              
+lshft_ctrl                   : A6        : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[8]            : A7        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[3]                : A8        : output : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[9]            : A9        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[0]                : A10       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[2]                : A11       : output : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[0]                : A12       : output : 3.3-V LVTTL       :         : 2         : N              
+to_dr_in_mux[2]              : A13       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : A14       : power  :                   : 3.3V    : 2         :                
+dr_out[3]                    : A15       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : A16       : gnd    :                   :         :           :                
+to_dr_in_mux[6]              : B1        : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+memory_dataout[6]            : B3        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[9]                : B4        : output : 3.3-V LVTTL       :         : 2         : N              
+to_dr_in_mux[5]              : B5        : output : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[5]            : B6        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : B7        : gnd    :                   :         :           :                
+to_ctrlpth[7]                : B8        : output : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[0]            : B9        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_dr_in_mux[0]              : B10       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[4]                : B11       : output : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[2]            : B12       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_datain[15]            : B13       : input  : 3.3-V LVTTL       :         : 2         : N              
+mar[1]                       : B14       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+memory_datain[9]             : B16       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCIO1                       : C1        : power  :                   : 3.3V    : 1         :                
+to_dr_in_mux[1]              : C2        : output : 3.3-V LVTTL       :         : 1         : N              
+mar[9]                       : C3        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_pc_addr[8]                : C4        : output : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[9]                : C5        : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[10]               : C6        : output : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[5]                : C7        : output : 3.3-V LVTTL       :         : 2         : N              
+sext_mux[1]                  : C8        : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[5]                : C9        : output : 3.3-V LVTTL       :         : 2         : N              
+dr_out[0]                    : C10       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[2]                : C11       : output : 3.3-V LVTTL       :         : 2         : N              
+mar[10]                      : C12       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_datain[12]            : C13       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_datain[0]             : C14       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[13]               : C15       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : C16       : power  :                   : 3.3V    : 2         :                
+GND*                         : D1        :        :                   :         : 1         :                
+mar[4]                       : D2        : input  : 3.3-V LVTTL       :         : 1         : N              
+mar[11]                      : D3        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_ctrlpth[6]                : D4        : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[6]                : D5        : output : 3.3-V LVTTL       :         : 2         : N              
+NC                           : D6        :        :                   :         :           :                
+NC                           : D7        :        :                   :         :           :                
+NC                           : D8        :        :                   :         :           :                
+NC                           : D9        :        :                   :         :           :                
+NC                           : D10       :        :                   :         :           :                
+to_sr2_mux[0]                : D11       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[1]                : D12       : output : 3.3-V LVTTL       :         : 2         : N              
+to_sr2_mux[1]                : D13       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D14       :        :                   :         : 2         :                
+to_pc_addr[12]               : D15       : output : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[1]                : D16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E1        :        :                   :         : 1         :                
+GND*                         : E2        :        :                   :         : 1         :                
+to_sr2_mux[10]               : E3        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[8]             : E4        : input  : 3.3-V LVTTL       :         : 1         : N              
+NC                           : E5        :        :                   :         :           :                
+NC                           : E6        :        :                   :         :           :                
+NC                           : E7        :        :                   :         :           :                
+NC                           : E8        :        :                   :         :           :                
+NC                           : E9        :        :                   :         :           :                
+NC                           : E10       :        :                   :         :           :                
+NC                           : E11       :        :                   :         :           :                
+NC                           : E12       :        :                   :         :           :                
+to_sr2_mux[6]                : E13       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[15]               : E14       : output : 3.3-V LVTTL       :         : 2         : N              
+to_sr2_mux[2]                : E15       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[11]               : E16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F1        :        :                   :         : 1         :                
+mar[0]                       : F2        : input  : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[5]             : F3        : input  : 3.3-V LVTTL       :         : 1         : N              
+NC                           : F4        :        :                   :         :           :                
+NC                           : F5        :        :                   :         :           :                
+NC                           : F6        :        :                   :         :           :                
+NC                           : F7        :        :                   :         :           :                
+VCCIO2                       : F8        : power  :                   : 3.3V    : 2         :                
+VCCIO2                       : F9        : power  :                   : 3.3V    : 2         :                
+NC                           : F10       :        :                   :         :           :                
+NC                           : F11       :        :                   :         :           :                
+NC                           : F12       :        :                   :         :           :                
+memory_datain[11]            : F13       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_sr2_mux[9]                : F14       : output : 3.3-V LVTTL       :         : 2         : N              
+to_pc_addr[14]               : F15       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F16       :        :                   :         : 2         :                
+memory_datain[2]             : G1        : input  : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[1]            : G2        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[8]                : G3        : output : 3.3-V LVTTL       :         : 1         : N              
+NC                           : G4        :        :                   :         :           :                
+NC                           : G5        :        :                   :         :           :                
+NC                           : G6        :        :                   :         :           :                
+GND                          : G7        : gnd    :                   :         :           :                
+GND                          : G8        : gnd    :                   :         :           :                
+GND                          : G9        : gnd    :                   :         :           :                
+GND                          : G10       : gnd    :                   :         :           :                
+NC                           : G11       :        :                   :         :           :                
+NC                           : G12       :        :                   :         :           :                
+NC                           : G13       :        :                   :         :           :                
+mar[12]                      : G14       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_datain[6]             : G15       : input  : 3.3-V LVTTL       :         : 2         : N              
+mar[5]                       : G16       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H1        :        :                   :         : 1         :                
+mar[3]                       : H2        : input  : 3.3-V LVTTL       :         : 1         : N              
+mar[14]                      : H3        : input  : 3.3-V LVTTL       :         : 1         : N              
+NC                           : H4        :        :                   :         :           :                
+mem_out_ctrl                 : H5        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : H6        : power  :                   : 3.3V    : 1         :                
+GND                          : H7        : gnd    :                   :         :           :                
+VCCINT                       : H8        : power  :                   : 1.8V    :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+VCCINT                       : H10       : power  :                   : 1.8V    :           :                
+VCCIO2                       : H11       : power  :                   : 3.3V    : 2         :                
+to_sr2_mux[5]                : H12       : output : 3.3-V LVTTL       :         : 2         : N              
+NC                           : H13       :        :                   :         :           :                
+to_ctrlpth[13]               : H14       : output : 3.3-V LVTTL       :         : 2         : N              
+dr_out[6]                    : H15       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[4]                : H16       : output : 3.3-V LVTTL       :         : 2         : N              
+memory_datain[4]             : J1        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[7]                : J2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : J3        :        :                   :         : 1         :                
+NC                           : J4        :        :                   :         :           :                
+dr_out[2]                    : J5        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : J6        : power  :                   : 3.3V    : 1         :                
+VCCINT                       : J7        : power  :                   : 1.8V    :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+VCCINT                       : J9        : power  :                   : 1.8V    :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+VCCIO2                       : J11       : power  :                   : 3.3V    : 2         :                
+mar[6]                       : J12       : input  : 3.3-V LVTTL       :         : 2         : N              
+NC                           : J13       :        :                   :         :           :                
+GND*                         : J14       :        :                   :         : 2         :                
+mar[8]                       : J15       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[12]           : J16       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_sr2_mux[13]               : K1        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[4]            : K2        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : K3        :        :                   :         : 1         :                
+NC                           : K4        :        :                   :         :           :                
+NC                           : K5        :        :                   :         :           :                
+NC                           : K6        :        :                   :         :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+GND                          : K9        : gnd    :                   :         :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+NC                           : K11       :        :                   :         :           :                
+NC                           : K12       :        :                   :         :           :                
+NC                           : K13       :        :                   :         :           :                
+memory_dataout[14]           : K14       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_dr_in_mux[14]             : K15       : output : 3.3-V LVTTL       :         : 2         : N              
+mar[7]                       : K16       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_dr_in_mux[4]              : L1        : output : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[15]               : L2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : L3        :        :                   :         : 1         :                
+word                         : L4        : input  : 3.3-V LVTTL       :         : 1         : N              
+NC                           : L5        :        :                   :         :           :                
+TDI                          : L6        : input  :                   :         : 1         :                
+NC                           : L7        :        :                   :         :           :                
+VCCIO1                       : L8        : power  :                   : 3.3V    : 1         :                
+VCCIO1                       : L9        : power  :                   : 3.3V    : 1         :                
+NC                           : L10       :        :                   :         :           :                
+NC                           : L11       :        :                   :         :           :                
+NC                           : L12       :        :                   :         :           :                
+memory_datain[13]            : L13       : input  : 3.3-V LVTTL       :         : 2         : N              
+memory_dataout[15]           : L14       : input  : 3.3-V LVTTL       :         : 2         : N              
+to_ctrlpth[15]               : L15       : output : 3.3-V LVTTL       :         : 2         : N              
+dr_out[1]                    : L16       : input  : 3.3-V LVTTL       :         : 2         : N              
+dr_out[10]                   : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : M2        :        :                   :         : 1         :                
+mar[15]                      : M3        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[14]               : M4        : output : 3.3-V LVTTL       :         : 1         : N              
+TDO                          : M5        : output :                   :         : 1         :                
+NC                           : M6        :        :                   :         :           :                
+NC                           : M7        :        :                   :         :           :                
+to_dr_in_mux[15]             : M8        : output : 3.3-V LVTTL       :         : 1         : N              
+to_ctrlpth[12]               : M9        : output : 3.3-V LVTTL       :         : 1         : N              
+NC                           : M10       :        :                   :         :           :                
+NC                           : M11       :        :                   :         :           :                
+NC                           : M12       :        :                   :         :           :                
+GND*                         : M13       :        :                   :         : 2         :                
+to_ctrlpth[14]               : M14       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : M15       :        :                   :         : 2         :                
+GND*                         : M16       :        :                   :         : 2         :                
+to_sr2_mux[4]                : N1        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[7]             : N2        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[12]               : N3        : output : 3.3-V LVTTL       :         : 1         : N              
+TMS                          : N4        : input  :                   :         : 1         :                
+GND*                         : N5        :        :                   :         : 1         :                
+NC                           : N6        :        :                   :         :           :                
+NC                           : N7        :        :                   :         :           :                
+NC                           : N8        :        :                   :         :           :                
+NC                           : N9        :        :                   :         :           :                
+NC                           : N10       :        :                   :         :           :                
+NC                           : N11       :        :                   :         :           :                
+to_dr_in_mux[12]             : N12       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : N13       :        :                   :         : 2         :                
+GND*                         : N14       :        :                   :         : 2         :                
+GND*                         : N15       :        :                   :         : 2         :                
+dr_out[8]                    : N16       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCIO1                       : P1        : power  :                   : 3.3V    : 1         :                
+dr_out[9]                    : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
+TCK                          : P3        : input  :                   :         : 1         :                
+dr_out[11]                   : P4        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : P5        :        :                   :         : 1         :                
+to_ctrlpth[11]               : P6        : output : 3.3-V LVTTL       :         : 1         : N              
+to_ctrlpth[8]                : P7        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[7]            : P8        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[11]             : P9        : output : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[8]              : P10       : output : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[13]             : P11       : output : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[14]            : P12       : input  : 3.3-V LVTTL       :         : 1         : N              
+dr_out[13]                   : P13       : input  : 3.3-V LVTTL       :         : 1         : N              
+dr_out[15]                   : P14       : input  : 3.3-V LVTTL       :         : 2         : N              
+dr_out[14]                   : P15       : input  : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : P16       : power  :                   : 3.3V    : 2         :                
+mar[13]                      : R1        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND                          : R2        : gnd    :                   :         :           :                
+dr_out[5]                    : R3        : input  : 3.3-V LVTTL       :         : 1         : N              
+mar[2]                       : R4        : input  : 3.3-V LVTTL       :         : 1         : N              
+dr_out[7]                    : R5        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_ctrlpth[3]                : R6        : output : 3.3-V LVTTL       :         : 1         : N              
+to_sr2_mux[3]                : R7        : output : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[9]              : R8        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[10]            : R9        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[7]              : R10       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R11       :        :                   :         : 1         :                
+memory_dataout[13]           : R12       : input  : 3.3-V LVTTL       :         : 1         : N              
+memory_datain[3]             : R13       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R14       :        :                   :         : 1         :                
+GND                          : R15       : gnd    :                   :         :           :                
+dr_out[12]                   : R16       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+to_sr2_mux[11]               : T2        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : T3        : power  :                   : 3.3V    : 1         :                
+to_dr_in_mux[3]              : T4        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[3]            : T5        : input  : 3.3-V LVTTL       :         : 1         : N              
+sext_mux[0]                  : T6        : input  : 3.3-V LVTTL       :         : 1         : N              
+to_dr_in_mux[10]             : T7        : output : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[10]           : T8        : input  : 3.3-V LVTTL       :         : 1         : N              
+memory_dataout[11]           : T9        : input  : 3.3-V LVTTL       :         : 1         : N              
+sext8_ctrl                   : T10       : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T11       :        :                   :         : 1         :                
+GND*                         : T12       :        :                   :         : 1         :                
+dr_out[4]                    : T13       : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : T14       : power  :                   : 3.3V    : 1         :                
+GND*                         : T15       :        :                   :         : 1         :                
+GND                          : T16       : gnd    :                   :         :           :                

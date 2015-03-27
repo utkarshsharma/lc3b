@@ -1,0 +1,656 @@
+TimeQuest Timing Analyzer report for datapath_lb
+Mon Oct 20 05:45:40 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Minimum Pulse Width: 'mem_out_ctrl'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Clock Transfers
+ 19. Report TCCS
+ 20. Report RSKM
+ 21. Unconstrained Paths
+ 22. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; datapath_lb                                        ;
+; Device Family      ; MAX V                                              ;
+; Device Name        ; 5M570ZF256C4                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                     ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; Clock Name   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; mem_out_ctrl ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { mem_out_ctrl } ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------------+
+; Minimum Pulse Width Summary           ;
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; mem_out_ctrl ; -2.289 ; -2.289        ;
++--------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'mem_out_ctrl'                                                                                ;
++--------+--------------+----------------+------------------+--------------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+--------------+------------+----------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; mem_out_ctrl ; Rise       ; mem_out_ctrl               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[0]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[0]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[10]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[10]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[11]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[11]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[12]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[12]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[13]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[13]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[14]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[14]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[15]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[15]|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[1]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[1]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[2]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[2]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[3]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[3]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[4]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[4]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[5]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[5]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[6]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[6]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[7]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[7]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[8]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[8]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_dr_in[9]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_dr_in[9]|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[0]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[0]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[10]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[10]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[11]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[11]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[12]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[12]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[13]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[13]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[14]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[14]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[15]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[15]|datad         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[1]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[1]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[2]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[2]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[3]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[3]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[4]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[4]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[5]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[5]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[6]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[6]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[7]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[7]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[8]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[8]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; i3|to_ir[9]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; i3|to_ir[9]|datad          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; mem_out_ctrl|combout       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; mem_out_ctrl|combout       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[10] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[10] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[11] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[11] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[12] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[12] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[13] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[13] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[14] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[14] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[15] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[15] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[1]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[1]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[2]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[2]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[3]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[3]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[4]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[4]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[5]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[5]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[6]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[6]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[7]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[7]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[8]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[8]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; mem_out_ctrl ; Rise       ; memout_mux:i3|to_dr_in[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; mem_out_ctrl ; Fall       ; memout_mux:i3|to_ir[0]     ;
++--------+--------------+----------------+------------------+--------------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++---------------------+--------------+-------+-------+------------+-----------------+
+; Data Port           ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------------+--------------+-------+-------+------------+-----------------+
+; memory_dataout[*]   ; mem_out_ctrl ; 4.786 ; 4.786 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[0]  ; mem_out_ctrl ; 4.068 ; 4.068 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[1]  ; mem_out_ctrl ; 3.430 ; 3.430 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[2]  ; mem_out_ctrl ; 4.087 ; 4.087 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[3]  ; mem_out_ctrl ; 4.079 ; 4.079 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[4]  ; mem_out_ctrl ; 3.232 ; 3.232 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[5]  ; mem_out_ctrl ; 4.703 ; 4.703 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[6]  ; mem_out_ctrl ; 4.091 ; 4.091 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[7]  ; mem_out_ctrl ; 4.125 ; 4.125 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[8]  ; mem_out_ctrl ; 4.362 ; 4.362 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[9]  ; mem_out_ctrl ; 4.786 ; 4.786 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[10] ; mem_out_ctrl ; 4.258 ; 4.258 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[11] ; mem_out_ctrl ; 4.390 ; 4.390 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[12] ; mem_out_ctrl ; 4.766 ; 4.766 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[13] ; mem_out_ctrl ; 4.335 ; 4.335 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[14] ; mem_out_ctrl ; 3.911 ; 3.911 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[15] ; mem_out_ctrl ; 3.865 ; 3.865 ; Rise       ; mem_out_ctrl    ;
+; memory_dataout[*]   ; mem_out_ctrl ; 5.438 ; 5.438 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[0]  ; mem_out_ctrl ; 4.098 ; 4.098 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[1]  ; mem_out_ctrl ; 4.844 ; 4.844 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[2]  ; mem_out_ctrl ; 4.756 ; 4.756 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[3]  ; mem_out_ctrl ; 4.269 ; 4.269 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[4]  ; mem_out_ctrl ; 3.226 ; 3.226 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[5]  ; mem_out_ctrl ; 4.722 ; 4.722 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[6]  ; mem_out_ctrl ; 4.748 ; 4.748 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[7]  ; mem_out_ctrl ; 4.214 ; 4.214 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[8]  ; mem_out_ctrl ; 4.692 ; 4.692 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[9]  ; mem_out_ctrl ; 4.429 ; 4.429 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[10] ; mem_out_ctrl ; 4.773 ; 4.773 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[11] ; mem_out_ctrl ; 5.438 ; 5.438 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[12] ; mem_out_ctrl ; 5.218 ; 5.218 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[13] ; mem_out_ctrl ; 4.298 ; 4.298 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[14] ; mem_out_ctrl ; 3.250 ; 3.250 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[15] ; mem_out_ctrl ; 4.748 ; 4.748 ; Fall       ; mem_out_ctrl    ;
++---------------------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++---------------------+--------------+--------+--------+------------+-----------------+
+; Data Port           ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------------+--------------+--------+--------+------------+-----------------+
+; memory_dataout[*]   ; mem_out_ctrl ; -1.397 ; -1.397 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[0]  ; mem_out_ctrl ; -2.235 ; -2.235 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[1]  ; mem_out_ctrl ; -1.605 ; -1.605 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[2]  ; mem_out_ctrl ; -1.925 ; -1.925 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[3]  ; mem_out_ctrl ; -1.917 ; -1.917 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[4]  ; mem_out_ctrl ; -1.397 ; -1.397 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[5]  ; mem_out_ctrl ; -2.870 ; -2.870 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[6]  ; mem_out_ctrl ; -1.929 ; -1.929 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[7]  ; mem_out_ctrl ; -1.852 ; -1.852 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[8]  ; mem_out_ctrl ; -2.515 ; -2.515 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[9]  ; mem_out_ctrl ; -2.544 ; -2.544 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[10] ; mem_out_ctrl ; -2.015 ; -2.015 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[11] ; mem_out_ctrl ; -2.122 ; -2.122 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[12] ; mem_out_ctrl ; -2.566 ; -2.566 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[13] ; mem_out_ctrl ; -2.460 ; -2.460 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[14] ; mem_out_ctrl ; -2.056 ; -2.056 ; Rise       ; mem_out_ctrl    ;
+;  memory_dataout[15] ; mem_out_ctrl ; -1.664 ; -1.664 ; Rise       ; mem_out_ctrl    ;
+; memory_dataout[*]   ; mem_out_ctrl ; -1.392 ; -1.392 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[0]  ; mem_out_ctrl ; -1.896 ; -1.896 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[1]  ; mem_out_ctrl ; -2.981 ; -2.981 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[2]  ; mem_out_ctrl ; -2.452 ; -2.452 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[3]  ; mem_out_ctrl ; -1.919 ; -1.919 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[4]  ; mem_out_ctrl ; -1.392 ; -1.392 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[5]  ; mem_out_ctrl ; -2.866 ; -2.866 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[6]  ; mem_out_ctrl ; -2.455 ; -2.455 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[7]  ; mem_out_ctrl ; -1.853 ; -1.853 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[8]  ; mem_out_ctrl ; -2.323 ; -2.323 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[9]  ; mem_out_ctrl ; -2.053 ; -2.053 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[10] ; mem_out_ctrl ; -2.419 ; -2.419 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[11] ; mem_out_ctrl ; -3.088 ; -3.088 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[12] ; mem_out_ctrl ; -2.908 ; -2.908 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[13] ; mem_out_ctrl ; -2.454 ; -2.454 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[14] ; mem_out_ctrl ; -1.425 ; -1.425 ; Fall       ; mem_out_ctrl    ;
+;  memory_dataout[15] ; mem_out_ctrl ; -2.923 ; -2.923 ; Fall       ; mem_out_ctrl    ;
++---------------------+--------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Clock to Output Times                                                             ;
++-------------------+--------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+--------------+--------+--------+------------+-----------------+
+; to_dr_in_mux[*]   ; mem_out_ctrl ; 13.469 ; 13.469 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[0]  ; mem_out_ctrl ; 7.706  ; 7.706  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[1]  ; mem_out_ctrl ; 8.398  ; 8.398  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[2]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[3]  ; mem_out_ctrl ; 7.495  ; 7.495  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[4]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[5]  ; mem_out_ctrl ; 6.104  ; 6.104  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[6]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[7]  ; mem_out_ctrl ; 8.370  ; 8.370  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[8]  ; mem_out_ctrl ; 9.196  ; 9.196  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[9]  ; mem_out_ctrl ; 8.132  ; 8.132  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[10] ; mem_out_ctrl ; 9.595  ; 9.595  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[11] ; mem_out_ctrl ; 8.166  ; 8.166  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[12] ; mem_out_ctrl ; 12.298 ; 12.298 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[13] ; mem_out_ctrl ; 13.316 ; 13.316 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[14] ; mem_out_ctrl ; 11.528 ; 11.528 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[15] ; mem_out_ctrl ; 13.469 ; 13.469 ; Rise       ; mem_out_ctrl    ;
+; to_ctrlpth[*]     ; mem_out_ctrl ; 9.590  ; 9.590  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[0]    ; mem_out_ctrl ; 8.495  ; 8.495  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[1]    ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[2]    ; mem_out_ctrl ; 7.696  ; 7.696  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[3]    ; mem_out_ctrl ; 9.035  ; 9.035  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[4]    ; mem_out_ctrl ; 9.285  ; 9.285  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[5]    ; mem_out_ctrl ; 7.773  ; 7.773  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[6]    ; mem_out_ctrl ; 8.486  ; 8.486  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[7]    ; mem_out_ctrl ; 7.845  ; 7.845  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[8]    ; mem_out_ctrl ; 7.810  ; 7.810  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[9]    ; mem_out_ctrl ; 7.582  ; 7.582  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[10]   ; mem_out_ctrl ; 8.587  ; 8.587  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[11]   ; mem_out_ctrl ; 5.975  ; 5.975  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[12]   ; mem_out_ctrl ; 9.590  ; 9.590  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[13]   ; mem_out_ctrl ; 8.662  ; 8.662  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[14]   ; mem_out_ctrl ; 8.458  ; 8.458  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[15]   ; mem_out_ctrl ; 5.972  ; 5.972  ; Fall       ; mem_out_ctrl    ;
+; to_pc_addr[*]     ; mem_out_ctrl ; 13.784 ; 13.784 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[0]    ; mem_out_ctrl ; 9.462  ; 9.462  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[1]    ; mem_out_ctrl ; 10.452 ; 10.452 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[2]    ; mem_out_ctrl ; 11.664 ; 11.664 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[3]    ; mem_out_ctrl ; 10.070 ; 10.070 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[4]    ; mem_out_ctrl ; 12.851 ; 12.851 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[5]    ; mem_out_ctrl ; 12.255 ; 12.255 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[6]    ; mem_out_ctrl ; 12.889 ; 12.889 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[7]    ; mem_out_ctrl ; 13.157 ; 13.157 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[8]    ; mem_out_ctrl ; 13.104 ; 13.104 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[9]    ; mem_out_ctrl ; 12.018 ; 12.018 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[10]   ; mem_out_ctrl ; 10.669 ; 10.669 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[11]   ; mem_out_ctrl ; 13.056 ; 13.056 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[12]   ; mem_out_ctrl ; 13.784 ; 13.784 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[13]   ; mem_out_ctrl ; 13.784 ; 13.784 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[14]   ; mem_out_ctrl ; 13.056 ; 13.056 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[15]   ; mem_out_ctrl ; 13.056 ; 13.056 ; Fall       ; mem_out_ctrl    ;
+; to_sr2_mux[*]     ; mem_out_ctrl ; 10.201 ; 10.201 ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[0]    ; mem_out_ctrl ; 8.487  ; 8.487  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[1]    ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[2]    ; mem_out_ctrl ; 7.472  ; 7.472  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[3]    ; mem_out_ctrl ; 8.256  ; 8.256  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[4]    ; mem_out_ctrl ; 8.706  ; 8.706  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[5]    ; mem_out_ctrl ; 9.285  ; 9.285  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[6]    ; mem_out_ctrl ; 10.201 ; 10.201 ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[7]    ; mem_out_ctrl ; 7.973  ; 7.973  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[8]    ; mem_out_ctrl ; 7.991  ; 7.991  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[9]    ; mem_out_ctrl ; 10.183 ; 10.183 ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[10]   ; mem_out_ctrl ; 8.000  ; 8.000  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[11]   ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[12]   ; mem_out_ctrl ; 8.706  ; 8.706  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[13]   ; mem_out_ctrl ; 7.973  ; 7.973  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[14]   ; mem_out_ctrl ; 8.725  ; 8.725  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[15]   ; mem_out_ctrl ; 8.725  ; 8.725  ; Fall       ; mem_out_ctrl    ;
++-------------------+--------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                     ;
++-------------------+--------------+--------+--------+------------+-----------------+
+; Data Port         ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------------+--------------+--------+--------+------------+-----------------+
+; to_dr_in_mux[*]   ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[0]  ; mem_out_ctrl ; 7.706  ; 7.706  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[1]  ; mem_out_ctrl ; 8.398  ; 8.398  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[2]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[3]  ; mem_out_ctrl ; 7.495  ; 7.495  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[4]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[5]  ; mem_out_ctrl ; 6.104  ; 6.104  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[6]  ; mem_out_ctrl ; 6.008  ; 6.008  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[7]  ; mem_out_ctrl ; 8.370  ; 8.370  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[8]  ; mem_out_ctrl ; 8.885  ; 8.885  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[9]  ; mem_out_ctrl ; 7.418  ; 7.418  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[10] ; mem_out_ctrl ; 8.882  ; 8.882  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[11] ; mem_out_ctrl ; 7.325  ; 7.325  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[12] ; mem_out_ctrl ; 10.406 ; 10.406 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[13] ; mem_out_ctrl ; 11.447 ; 11.447 ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[14] ; mem_out_ctrl ; 9.817  ; 9.817  ; Rise       ; mem_out_ctrl    ;
+;  to_dr_in_mux[15] ; mem_out_ctrl ; 11.577 ; 11.577 ; Rise       ; mem_out_ctrl    ;
+; to_ctrlpth[*]     ; mem_out_ctrl ; 5.972  ; 5.972  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[0]    ; mem_out_ctrl ; 8.495  ; 8.495  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[1]    ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[2]    ; mem_out_ctrl ; 7.696  ; 7.696  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[3]    ; mem_out_ctrl ; 9.035  ; 9.035  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[4]    ; mem_out_ctrl ; 9.285  ; 9.285  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[5]    ; mem_out_ctrl ; 7.773  ; 7.773  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[6]    ; mem_out_ctrl ; 8.486  ; 8.486  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[7]    ; mem_out_ctrl ; 7.845  ; 7.845  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[8]    ; mem_out_ctrl ; 7.810  ; 7.810  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[9]    ; mem_out_ctrl ; 7.582  ; 7.582  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[10]   ; mem_out_ctrl ; 8.587  ; 8.587  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[11]   ; mem_out_ctrl ; 5.975  ; 5.975  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[12]   ; mem_out_ctrl ; 9.590  ; 9.590  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[13]   ; mem_out_ctrl ; 8.662  ; 8.662  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[14]   ; mem_out_ctrl ; 8.458  ; 8.458  ; Fall       ; mem_out_ctrl    ;
+;  to_ctrlpth[15]   ; mem_out_ctrl ; 5.972  ; 5.972  ; Fall       ; mem_out_ctrl    ;
+; to_pc_addr[*]     ; mem_out_ctrl ; 8.932  ; 8.932  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[0]    ; mem_out_ctrl ; 9.462  ; 9.462  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[1]    ; mem_out_ctrl ; 10.258 ; 10.258 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[2]    ; mem_out_ctrl ; 10.618 ; 10.618 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[3]    ; mem_out_ctrl ; 8.932  ; 8.932  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[4]    ; mem_out_ctrl ; 12.308 ; 12.308 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[5]    ; mem_out_ctrl ; 10.150 ; 10.150 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[6]    ; mem_out_ctrl ; 10.221 ; 10.221 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[7]    ; mem_out_ctrl ; 9.684  ; 9.684  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[8]    ; mem_out_ctrl ; 10.477 ; 10.477 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[9]    ; mem_out_ctrl ; 11.495 ; 11.495 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[10]   ; mem_out_ctrl ; 9.294  ; 9.294  ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[11]   ; mem_out_ctrl ; 11.333 ; 11.333 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[12]   ; mem_out_ctrl ; 12.061 ; 12.061 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[13]   ; mem_out_ctrl ; 12.061 ; 12.061 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[14]   ; mem_out_ctrl ; 11.333 ; 11.333 ; Fall       ; mem_out_ctrl    ;
+;  to_pc_addr[15]   ; mem_out_ctrl ; 11.333 ; 11.333 ; Fall       ; mem_out_ctrl    ;
+; to_sr2_mux[*]     ; mem_out_ctrl ; 7.472  ; 7.472  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[0]    ; mem_out_ctrl ; 8.487  ; 8.487  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[1]    ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[2]    ; mem_out_ctrl ; 7.472  ; 7.472  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[3]    ; mem_out_ctrl ; 8.256  ; 8.256  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[4]    ; mem_out_ctrl ; 8.706  ; 8.706  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[5]    ; mem_out_ctrl ; 9.285  ; 9.285  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[6]    ; mem_out_ctrl ; 10.201 ; 10.201 ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[7]    ; mem_out_ctrl ; 7.973  ; 7.973  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[8]    ; mem_out_ctrl ; 7.991  ; 7.991  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[9]    ; mem_out_ctrl ; 10.183 ; 10.183 ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[10]   ; mem_out_ctrl ; 8.000  ; 8.000  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[11]   ; mem_out_ctrl ; 8.283  ; 8.283  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[12]   ; mem_out_ctrl ; 8.706  ; 8.706  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[13]   ; mem_out_ctrl ; 7.973  ; 7.973  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[14]   ; mem_out_ctrl ; 8.725  ; 8.725  ; Fall       ; mem_out_ctrl    ;
+;  to_sr2_mux[15]   ; mem_out_ctrl ; 8.725  ; 8.725  ; Fall       ; mem_out_ctrl    ;
++-------------------+--------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++-------------+------------------+--------+----+----+--------+
+; Input Port  ; Output Port      ; RR     ; RF ; FR ; FF     ;
++-------------+------------------+--------+----+----+--------+
+; lshft_ctrl  ; to_pc_addr[0]    ; 11.000 ;    ;    ; 11.000 ;
+; lshft_ctrl  ; to_pc_addr[1]    ; 11.285 ;    ;    ; 11.285 ;
+; lshft_ctrl  ; to_pc_addr[2]    ; 11.448 ;    ;    ; 11.448 ;
+; lshft_ctrl  ; to_pc_addr[3]    ; 9.550  ;    ;    ; 9.550  ;
+; lshft_ctrl  ; to_pc_addr[4]    ; 11.787 ;    ;    ; 11.787 ;
+; lshft_ctrl  ; to_pc_addr[5]    ; 11.189 ;    ;    ; 11.189 ;
+; lshft_ctrl  ; to_pc_addr[6]    ; 12.118 ;    ;    ; 12.118 ;
+; lshft_ctrl  ; to_pc_addr[7]    ; 11.774 ;    ;    ; 11.774 ;
+; lshft_ctrl  ; to_pc_addr[8]    ; 12.587 ;    ;    ; 12.587 ;
+; lshft_ctrl  ; to_pc_addr[9]    ; 12.012 ;    ;    ; 12.012 ;
+; lshft_ctrl  ; to_pc_addr[10]   ; 10.990 ;    ;    ; 10.990 ;
+; sext8_ctrl  ; to_dr_in_mux[8]  ; 10.221 ;    ;    ; 10.221 ;
+; sext8_ctrl  ; to_dr_in_mux[9]  ; 8.239  ;    ;    ; 8.239  ;
+; sext8_ctrl  ; to_dr_in_mux[10] ; 9.703  ;    ;    ; 9.703  ;
+; sext8_ctrl  ; to_dr_in_mux[11] ; 8.245  ;    ;    ; 8.245  ;
+; sext8_ctrl  ; to_dr_in_mux[12] ; 11.875 ;    ;    ; 11.875 ;
+; sext8_ctrl  ; to_dr_in_mux[13] ; 12.897 ;    ;    ; 12.897 ;
+; sext8_ctrl  ; to_dr_in_mux[14] ; 11.099 ;    ;    ; 11.099 ;
+; sext8_ctrl  ; to_dr_in_mux[15] ; 13.048 ;    ;    ; 13.048 ;
+; sext_mux[0] ; to_pc_addr[0]    ; 10.479 ;    ;    ; 10.479 ;
+; sext_mux[0] ; to_pc_addr[1]    ; 12.543 ;    ;    ; 12.543 ;
+; sext_mux[0] ; to_pc_addr[2]    ; 12.708 ;    ;    ; 12.708 ;
+; sext_mux[0] ; to_pc_addr[3]    ; 10.285 ;    ;    ; 10.285 ;
+; sext_mux[0] ; to_pc_addr[4]    ; 12.524 ;    ;    ; 12.524 ;
+; sext_mux[0] ; to_pc_addr[5]    ; 11.928 ;    ;    ; 11.928 ;
+; sext_mux[0] ; to_pc_addr[6]    ; 12.433 ;    ;    ; 12.433 ;
+; sext_mux[0] ; to_pc_addr[7]    ; 10.838 ;    ;    ; 10.838 ;
+; sext_mux[0] ; to_pc_addr[8]    ; 11.633 ;    ;    ; 11.633 ;
+; sext_mux[0] ; to_pc_addr[9]    ; 13.187 ;    ;    ; 13.187 ;
+; sext_mux[0] ; to_pc_addr[10]   ; 11.639 ;    ;    ; 11.639 ;
+; sext_mux[0] ; to_pc_addr[11]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[0] ; to_pc_addr[12]   ; 12.311 ;    ;    ; 12.311 ;
+; sext_mux[0] ; to_pc_addr[13]   ; 12.311 ;    ;    ; 12.311 ;
+; sext_mux[0] ; to_pc_addr[14]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[0] ; to_pc_addr[15]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[1] ; to_pc_addr[0]    ; 9.895  ;    ;    ; 9.895  ;
+; sext_mux[1] ; to_pc_addr[1]    ; 11.958 ;    ;    ; 11.958 ;
+; sext_mux[1] ; to_pc_addr[2]    ; 12.123 ;    ;    ; 12.123 ;
+; sext_mux[1] ; to_pc_addr[3]    ; 9.700  ;    ;    ; 9.700  ;
+; sext_mux[1] ; to_pc_addr[4]    ; 11.939 ;    ;    ; 11.939 ;
+; sext_mux[1] ; to_pc_addr[5]    ; 11.343 ;    ;    ; 11.343 ;
+; sext_mux[1] ; to_pc_addr[6]    ; 12.000 ;    ;    ; 12.000 ;
+; sext_mux[1] ; to_pc_addr[7]    ; 10.063 ;    ;    ; 10.063 ;
+; sext_mux[1] ; to_pc_addr[8]    ; 10.857 ;    ;    ; 10.857 ;
+; sext_mux[1] ; to_pc_addr[9]    ; 12.415 ;    ;    ; 12.415 ;
+; sext_mux[1] ; to_pc_addr[10]   ; 10.633 ;    ;    ; 10.633 ;
+; sext_mux[1] ; to_pc_addr[11]   ; 13.901 ;    ;    ; 13.901 ;
+; sext_mux[1] ; to_pc_addr[12]   ; 14.629 ;    ;    ; 14.629 ;
+; sext_mux[1] ; to_pc_addr[13]   ; 14.629 ;    ;    ; 14.629 ;
+; sext_mux[1] ; to_pc_addr[14]   ; 13.901 ;    ;    ; 13.901 ;
+; sext_mux[1] ; to_pc_addr[15]   ; 13.901 ;    ;    ; 13.901 ;
++-------------+------------------+--------+----+----+--------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++-------------+------------------+--------+----+----+--------+
+; Input Port  ; Output Port      ; RR     ; RF ; FR ; FF     ;
++-------------+------------------+--------+----+----+--------+
+; lshft_ctrl  ; to_pc_addr[0]    ; 11.000 ;    ;    ; 11.000 ;
+; lshft_ctrl  ; to_pc_addr[1]    ; 11.285 ;    ;    ; 11.285 ;
+; lshft_ctrl  ; to_pc_addr[2]    ; 11.448 ;    ;    ; 11.448 ;
+; lshft_ctrl  ; to_pc_addr[3]    ; 9.550  ;    ;    ; 9.550  ;
+; lshft_ctrl  ; to_pc_addr[4]    ; 11.787 ;    ;    ; 11.787 ;
+; lshft_ctrl  ; to_pc_addr[5]    ; 11.189 ;    ;    ; 11.189 ;
+; lshft_ctrl  ; to_pc_addr[6]    ; 9.685  ;    ;    ; 9.685  ;
+; lshft_ctrl  ; to_pc_addr[7]    ; 11.774 ;    ;    ; 11.774 ;
+; lshft_ctrl  ; to_pc_addr[8]    ; 12.587 ;    ;    ; 12.587 ;
+; lshft_ctrl  ; to_pc_addr[9]    ; 12.012 ;    ;    ; 12.012 ;
+; lshft_ctrl  ; to_pc_addr[10]   ; 10.990 ;    ;    ; 10.990 ;
+; sext8_ctrl  ; to_dr_in_mux[8]  ; 10.221 ;    ;    ; 10.221 ;
+; sext8_ctrl  ; to_dr_in_mux[9]  ; 8.239  ;    ;    ; 8.239  ;
+; sext8_ctrl  ; to_dr_in_mux[10] ; 9.703  ;    ;    ; 9.703  ;
+; sext8_ctrl  ; to_dr_in_mux[11] ; 8.245  ;    ;    ; 8.245  ;
+; sext8_ctrl  ; to_dr_in_mux[12] ; 11.875 ;    ;    ; 11.875 ;
+; sext8_ctrl  ; to_dr_in_mux[13] ; 12.897 ;    ;    ; 12.897 ;
+; sext8_ctrl  ; to_dr_in_mux[14] ; 11.099 ;    ;    ; 11.099 ;
+; sext8_ctrl  ; to_dr_in_mux[15] ; 13.048 ;    ;    ; 13.048 ;
+; sext_mux[0] ; to_pc_addr[0]    ; 10.479 ;    ;    ; 10.479 ;
+; sext_mux[0] ; to_pc_addr[1]    ; 12.543 ;    ;    ; 12.543 ;
+; sext_mux[0] ; to_pc_addr[2]    ; 12.708 ;    ;    ; 12.708 ;
+; sext_mux[0] ; to_pc_addr[3]    ; 10.285 ;    ;    ; 10.285 ;
+; sext_mux[0] ; to_pc_addr[4]    ; 12.524 ;    ;    ; 12.524 ;
+; sext_mux[0] ; to_pc_addr[5]    ; 11.928 ;    ;    ; 11.928 ;
+; sext_mux[0] ; to_pc_addr[6]    ; 12.069 ;    ;    ; 12.069 ;
+; sext_mux[0] ; to_pc_addr[7]    ; 10.838 ;    ;    ; 10.838 ;
+; sext_mux[0] ; to_pc_addr[8]    ; 11.633 ;    ;    ; 11.633 ;
+; sext_mux[0] ; to_pc_addr[9]    ; 10.715 ;    ;    ; 10.715 ;
+; sext_mux[0] ; to_pc_addr[10]   ; 9.538  ;    ;    ; 9.538  ;
+; sext_mux[0] ; to_pc_addr[11]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[0] ; to_pc_addr[12]   ; 12.311 ;    ;    ; 12.311 ;
+; sext_mux[0] ; to_pc_addr[13]   ; 12.311 ;    ;    ; 12.311 ;
+; sext_mux[0] ; to_pc_addr[14]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[0] ; to_pc_addr[15]   ; 11.583 ;    ;    ; 11.583 ;
+; sext_mux[1] ; to_pc_addr[0]    ; 9.895  ;    ;    ; 9.895  ;
+; sext_mux[1] ; to_pc_addr[1]    ; 11.958 ;    ;    ; 11.958 ;
+; sext_mux[1] ; to_pc_addr[2]    ; 12.123 ;    ;    ; 12.123 ;
+; sext_mux[1] ; to_pc_addr[3]    ; 9.700  ;    ;    ; 9.700  ;
+; sext_mux[1] ; to_pc_addr[4]    ; 11.939 ;    ;    ; 11.939 ;
+; sext_mux[1] ; to_pc_addr[5]    ; 11.343 ;    ;    ; 11.343 ;
+; sext_mux[1] ; to_pc_addr[6]    ; 11.297 ;    ;    ; 11.297 ;
+; sext_mux[1] ; to_pc_addr[7]    ; 10.063 ;    ;    ; 10.063 ;
+; sext_mux[1] ; to_pc_addr[8]    ; 10.857 ;    ;    ; 10.857 ;
+; sext_mux[1] ; to_pc_addr[9]    ; 11.902 ;    ;    ; 11.902 ;
+; sext_mux[1] ; to_pc_addr[10]   ; 9.009  ;    ;    ; 9.009  ;
+; sext_mux[1] ; to_pc_addr[11]   ; 11.052 ;    ;    ; 11.052 ;
+; sext_mux[1] ; to_pc_addr[12]   ; 11.780 ;    ;    ; 11.780 ;
+; sext_mux[1] ; to_pc_addr[13]   ; 11.780 ;    ;    ; 11.780 ;
+; sext_mux[1] ; to_pc_addr[14]   ; 11.052 ;    ;    ; 11.052 ;
+; sext_mux[1] ; to_pc_addr[15]   ; 11.052 ;    ;    ; 11.052 ;
++-------------+------------------+--------+----+----+--------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 20    ; 20   ;
+; Unconstrained Input Port Paths  ; 83    ; 83   ;
+; Unconstrained Output Ports      ; 64    ; 64   ;
+; Unconstrained Output Port Paths ; 148   ; 148  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Mon Oct 20 05:45:36 2014
+Info: Command: quartus_sta datapath_lb -c datapath_lb
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 32 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'datapath_lb.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name mem_out_ctrl mem_out_ctrl
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 mem_out_ctrl 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 396 megabytes
+    Info: Processing ended: Mon Oct 20 05:45:40 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/ModelSim/examples
+vALU
+Z0 !s110 1412671120
+!i10b 1
+!s100 J^d3cQRooSPHhY>8MTRG62
+IQP3NS@jG6hlXG;>zj6W531
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dU:/Acads 5th Sem/EE 337 Lab/project lc-3b
+w1412670678
+8U:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v
+FU:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v
+L0 1
+Z3 OP;L;10.3;59
+r1
+!s85 0
+31
+!s108 1412671119.961000
+!s107 U:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v|
+!s90 -reportprogress|300|-nostats|-work|alu|U:/Acads 5th Sem/EE 337 Lab/project lc-3b/ALU.v|
+!s101 -O0
+Z4 o-work alu -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vRegFile
+R0
+!i10b 1
+!s100 6zo4BiJlO2DV2M;;H`Gz_1
+IED[@z6ZlG17n@FAk[?D<U2
+R1
+R2
+w1412651181
+8U:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v
+FU:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1412671120.588000
+!s107 U:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v|
+!s90 -reportprogress|300|-nostats|-work|alu|U:/Acads 5th Sem/EE 337 Lab/project lc-3b/RegFile.v|
+!s101 -O0
+R4
+n@reg@file

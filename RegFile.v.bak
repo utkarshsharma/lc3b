@@ -1,0 +1,26 @@
+module RegFile( data, ld_reg, dr, sr1, sr2, clk, rst, sr1_out, sr2_out);
+	input wire rst;
+	input wire  [15:0]dr_in; // data bus
+	input wire  data_in; // write data to destination register?
+	input wire  [2:0] dr; // destination register index
+	input wire  [2:0] sr1; // source register 1 index
+	input wire  [2:0] sr2; // source register 2 index
+	output wire [15:0]sr1_out; // source register 1 output
+	output wire [15:0]sr2_out; // source register 2 output
+    // actual internal registers
+   reg [15:0]R[0:7];
+    // TODO: find out whether this is the desired behavior or not
+    // I think its fine, since sr1/2 are output of the control store
+    // which is only updated on posedge clock.
+    // Otherwise we have to latch updating the output of sr1/2 to
+    // posedge clock as well.
+   assign sr1_out = R[sr1];
+   assign sr2_out = R[sr2];
+
+   always @(posedge rst) begin
+		R[0] <= 0; R[1] <= 0; R[2] <= 0; R[3] <= 0;
+		R[4] <= 0; R[5] <= 0; R[6] <= 0; R[7] <= 0;
+	end
+	always @ (posedge data_in)
+		R[dr] <= dr_in;
+endmodule

@@ -1,0 +1,411 @@
+TimeQuest Timing Analyzer report for ALU
+Tue Oct 07 16:44:25 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Minimum Pulse Width: 'opval[1]'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Clock Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths
+ 20. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; ALU                                                ;
+; Device Family      ; MAX V                                              ;
+; Device Name        ; 5M240ZT144C4                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; opval[1]   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { opval[1] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-----------------------------------+
+; Minimum Pulse Width Summary       ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; opval[1] ; -2.289 ; -2.289        ;
++----------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'opval[1]'                                                                       ;
++--------+--------------+----------------+------------------+----------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+----------+------------+-------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; opval[1] ; Rise       ; opval[1]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[0]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[0]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[10]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[10]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[10]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[11]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[11]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[11]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[12]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[12]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[13]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[13]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[14]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[14]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[15]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[15]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[15]$latch|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[1]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[1]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[2]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[2]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[3]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[3]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[4]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[4]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[5]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[5]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[6]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[6]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[7]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[7]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[8]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[8]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[9]$latch        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; D[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; D[9]$latch|datad  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; opval[1] ; Rise       ; opval[1]|combout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; opval[1] ; Rise       ; opval[1]|combout  ;
++--------+--------------+----------------+------------------+----------+------------+-------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; A1[*]     ; opval[1]   ; 14.097 ; 14.097 ; Rise       ; opval[1]        ;
+;  A1[0]    ; opval[1]   ; 12.427 ; 12.427 ; Rise       ; opval[1]        ;
+;  A1[1]    ; opval[1]   ; 13.181 ; 13.181 ; Rise       ; opval[1]        ;
+;  A1[2]    ; opval[1]   ; 13.637 ; 13.637 ; Rise       ; opval[1]        ;
+;  A1[3]    ; opval[1]   ; 13.592 ; 13.592 ; Rise       ; opval[1]        ;
+;  A1[4]    ; opval[1]   ; 13.428 ; 13.428 ; Rise       ; opval[1]        ;
+;  A1[5]    ; opval[1]   ; 14.097 ; 14.097 ; Rise       ; opval[1]        ;
+;  A1[6]    ; opval[1]   ; 13.496 ; 13.496 ; Rise       ; opval[1]        ;
+;  A1[7]    ; opval[1]   ; 13.892 ; 13.892 ; Rise       ; opval[1]        ;
+;  A1[8]    ; opval[1]   ; 11.987 ; 11.987 ; Rise       ; opval[1]        ;
+;  A1[9]    ; opval[1]   ; 11.158 ; 11.158 ; Rise       ; opval[1]        ;
+;  A1[10]   ; opval[1]   ; 12.288 ; 12.288 ; Rise       ; opval[1]        ;
+;  A1[11]   ; opval[1]   ; 12.350 ; 12.350 ; Rise       ; opval[1]        ;
+;  A1[12]   ; opval[1]   ; 11.058 ; 11.058 ; Rise       ; opval[1]        ;
+;  A1[13]   ; opval[1]   ; 11.637 ; 11.637 ; Rise       ; opval[1]        ;
+;  A1[14]   ; opval[1]   ; 9.841  ; 9.841  ; Rise       ; opval[1]        ;
+;  A1[15]   ; opval[1]   ; 9.479  ; 9.479  ; Rise       ; opval[1]        ;
+; A2[*]     ; opval[1]   ; 13.820 ; 13.820 ; Rise       ; opval[1]        ;
+;  A2[0]    ; opval[1]   ; 13.820 ; 13.820 ; Rise       ; opval[1]        ;
+;  A2[1]    ; opval[1]   ; 13.686 ; 13.686 ; Rise       ; opval[1]        ;
+;  A2[2]    ; opval[1]   ; 12.843 ; 12.843 ; Rise       ; opval[1]        ;
+;  A2[3]    ; opval[1]   ; 13.112 ; 13.112 ; Rise       ; opval[1]        ;
+;  A2[4]    ; opval[1]   ; 12.705 ; 12.705 ; Rise       ; opval[1]        ;
+;  A2[5]    ; opval[1]   ; 12.608 ; 12.608 ; Rise       ; opval[1]        ;
+;  A2[6]    ; opval[1]   ; 13.340 ; 13.340 ; Rise       ; opval[1]        ;
+;  A2[7]    ; opval[1]   ; 13.267 ; 13.267 ; Rise       ; opval[1]        ;
+;  A2[8]    ; opval[1]   ; 10.974 ; 10.974 ; Rise       ; opval[1]        ;
+;  A2[9]    ; opval[1]   ; 11.435 ; 11.435 ; Rise       ; opval[1]        ;
+;  A2[10]   ; opval[1]   ; 11.593 ; 11.593 ; Rise       ; opval[1]        ;
+;  A2[11]   ; opval[1]   ; 11.420 ; 11.420 ; Rise       ; opval[1]        ;
+;  A2[12]   ; opval[1]   ; 11.260 ; 11.260 ; Rise       ; opval[1]        ;
+;  A2[13]   ; opval[1]   ; 11.082 ; 11.082 ; Rise       ; opval[1]        ;
+;  A2[14]   ; opval[1]   ; 11.018 ; 11.018 ; Rise       ; opval[1]        ;
+;  A2[15]   ; opval[1]   ; 8.268  ; 8.268  ; Rise       ; opval[1]        ;
+; opval[*]  ; opval[1]   ; 8.832  ; 8.832  ; Rise       ; opval[1]        ;
+;  opval[0] ; opval[1]   ; 8.832  ; 8.832  ; Rise       ; opval[1]        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; A1[*]     ; opval[1]   ; -3.626 ; -3.626 ; Rise       ; opval[1]        ;
+;  A1[0]    ; opval[1]   ; -4.188 ; -4.188 ; Rise       ; opval[1]        ;
+;  A1[1]    ; opval[1]   ; -5.811 ; -5.811 ; Rise       ; opval[1]        ;
+;  A1[2]    ; opval[1]   ; -4.328 ; -4.328 ; Rise       ; opval[1]        ;
+;  A1[3]    ; opval[1]   ; -5.231 ; -5.231 ; Rise       ; opval[1]        ;
+;  A1[4]    ; opval[1]   ; -5.180 ; -5.180 ; Rise       ; opval[1]        ;
+;  A1[5]    ; opval[1]   ; -6.452 ; -6.452 ; Rise       ; opval[1]        ;
+;  A1[6]    ; opval[1]   ; -4.404 ; -4.404 ; Rise       ; opval[1]        ;
+;  A1[7]    ; opval[1]   ; -4.152 ; -4.152 ; Rise       ; opval[1]        ;
+;  A1[8]    ; opval[1]   ; -5.820 ; -5.820 ; Rise       ; opval[1]        ;
+;  A1[9]    ; opval[1]   ; -5.287 ; -5.287 ; Rise       ; opval[1]        ;
+;  A1[10]   ; opval[1]   ; -4.093 ; -4.093 ; Rise       ; opval[1]        ;
+;  A1[11]   ; opval[1]   ; -4.363 ; -4.363 ; Rise       ; opval[1]        ;
+;  A1[12]   ; opval[1]   ; -3.626 ; -3.626 ; Rise       ; opval[1]        ;
+;  A1[13]   ; opval[1]   ; -3.886 ; -3.886 ; Rise       ; opval[1]        ;
+;  A1[14]   ; opval[1]   ; -3.953 ; -3.953 ; Rise       ; opval[1]        ;
+;  A1[15]   ; opval[1]   ; -5.731 ; -5.731 ; Rise       ; opval[1]        ;
+; A2[*]     ; opval[1]   ; -3.435 ; -3.435 ; Rise       ; opval[1]        ;
+;  A2[0]    ; opval[1]   ; -3.944 ; -3.944 ; Rise       ; opval[1]        ;
+;  A2[1]    ; opval[1]   ; -5.802 ; -5.802 ; Rise       ; opval[1]        ;
+;  A2[2]    ; opval[1]   ; -5.560 ; -5.560 ; Rise       ; opval[1]        ;
+;  A2[3]    ; opval[1]   ; -4.878 ; -4.878 ; Rise       ; opval[1]        ;
+;  A2[4]    ; opval[1]   ; -3.435 ; -3.435 ; Rise       ; opval[1]        ;
+;  A2[5]    ; opval[1]   ; -3.813 ; -3.813 ; Rise       ; opval[1]        ;
+;  A2[6]    ; opval[1]   ; -4.323 ; -4.323 ; Rise       ; opval[1]        ;
+;  A2[7]    ; opval[1]   ; -4.089 ; -4.089 ; Rise       ; opval[1]        ;
+;  A2[8]    ; opval[1]   ; -3.816 ; -3.816 ; Rise       ; opval[1]        ;
+;  A2[9]    ; opval[1]   ; -5.435 ; -5.435 ; Rise       ; opval[1]        ;
+;  A2[10]   ; opval[1]   ; -4.225 ; -4.225 ; Rise       ; opval[1]        ;
+;  A2[11]   ; opval[1]   ; -4.035 ; -4.035 ; Rise       ; opval[1]        ;
+;  A2[12]   ; opval[1]   ; -3.978 ; -3.978 ; Rise       ; opval[1]        ;
+;  A2[13]   ; opval[1]   ; -4.793 ; -4.793 ; Rise       ; opval[1]        ;
+;  A2[14]   ; opval[1]   ; -4.831 ; -4.831 ; Rise       ; opval[1]        ;
+;  A2[15]   ; opval[1]   ; -4.521 ; -4.521 ; Rise       ; opval[1]        ;
+; opval[*]  ; opval[1]   ; -3.731 ; -3.731 ; Rise       ; opval[1]        ;
+;  opval[0] ; opval[1]   ; -3.731 ; -3.731 ; Rise       ; opval[1]        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D[*]      ; opval[1]   ; 10.401 ; 10.401 ; Rise       ; opval[1]        ;
+;  D[0]     ; opval[1]   ; 8.331  ; 8.331  ; Rise       ; opval[1]        ;
+;  D[1]     ; opval[1]   ; 7.841  ; 7.841  ; Rise       ; opval[1]        ;
+;  D[2]     ; opval[1]   ; 8.433  ; 8.433  ; Rise       ; opval[1]        ;
+;  D[3]     ; opval[1]   ; 8.073  ; 8.073  ; Rise       ; opval[1]        ;
+;  D[4]     ; opval[1]   ; 8.445  ; 8.445  ; Rise       ; opval[1]        ;
+;  D[5]     ; opval[1]   ; 7.768  ; 7.768  ; Rise       ; opval[1]        ;
+;  D[6]     ; opval[1]   ; 8.522  ; 8.522  ; Rise       ; opval[1]        ;
+;  D[7]     ; opval[1]   ; 7.621  ; 7.621  ; Rise       ; opval[1]        ;
+;  D[8]     ; opval[1]   ; 10.401 ; 10.401 ; Rise       ; opval[1]        ;
+;  D[9]     ; opval[1]   ; 6.092  ; 6.092  ; Rise       ; opval[1]        ;
+;  D[10]    ; opval[1]   ; 8.324  ; 8.324  ; Rise       ; opval[1]        ;
+;  D[11]    ; opval[1]   ; 7.773  ; 7.773  ; Rise       ; opval[1]        ;
+;  D[12]    ; opval[1]   ; 8.334  ; 8.334  ; Rise       ; opval[1]        ;
+;  D[13]    ; opval[1]   ; 7.509  ; 7.509  ; Rise       ; opval[1]        ;
+;  D[14]    ; opval[1]   ; 7.748  ; 7.748  ; Rise       ; opval[1]        ;
+;  D[15]    ; opval[1]   ; 8.660  ; 8.660  ; Rise       ; opval[1]        ;
+; N         ; opval[1]   ; 8.675  ; 8.675  ; Rise       ; opval[1]        ;
+; P         ; opval[1]   ; 18.989 ; 18.989 ; Rise       ; opval[1]        ;
+; Z         ; opval[1]   ; 18.222 ; 18.222 ; Rise       ; opval[1]        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D[*]      ; opval[1]   ; 6.092  ; 6.092  ; Rise       ; opval[1]        ;
+;  D[0]     ; opval[1]   ; 8.331  ; 8.331  ; Rise       ; opval[1]        ;
+;  D[1]     ; opval[1]   ; 7.841  ; 7.841  ; Rise       ; opval[1]        ;
+;  D[2]     ; opval[1]   ; 8.433  ; 8.433  ; Rise       ; opval[1]        ;
+;  D[3]     ; opval[1]   ; 8.073  ; 8.073  ; Rise       ; opval[1]        ;
+;  D[4]     ; opval[1]   ; 8.445  ; 8.445  ; Rise       ; opval[1]        ;
+;  D[5]     ; opval[1]   ; 7.768  ; 7.768  ; Rise       ; opval[1]        ;
+;  D[6]     ; opval[1]   ; 8.522  ; 8.522  ; Rise       ; opval[1]        ;
+;  D[7]     ; opval[1]   ; 7.621  ; 7.621  ; Rise       ; opval[1]        ;
+;  D[8]     ; opval[1]   ; 10.401 ; 10.401 ; Rise       ; opval[1]        ;
+;  D[9]     ; opval[1]   ; 6.092  ; 6.092  ; Rise       ; opval[1]        ;
+;  D[10]    ; opval[1]   ; 8.324  ; 8.324  ; Rise       ; opval[1]        ;
+;  D[11]    ; opval[1]   ; 7.773  ; 7.773  ; Rise       ; opval[1]        ;
+;  D[12]    ; opval[1]   ; 8.334  ; 8.334  ; Rise       ; opval[1]        ;
+;  D[13]    ; opval[1]   ; 7.509  ; 7.509  ; Rise       ; opval[1]        ;
+;  D[14]    ; opval[1]   ; 7.748  ; 7.748  ; Rise       ; opval[1]        ;
+;  D[15]    ; opval[1]   ; 8.660  ; 8.660  ; Rise       ; opval[1]        ;
+; N         ; opval[1]   ; 8.675  ; 8.675  ; Rise       ; opval[1]        ;
+; P         ; opval[1]   ; 11.436 ; 11.436 ; Rise       ; opval[1]        ;
+; Z         ; opval[1]   ; 10.670 ; 10.670 ; Rise       ; opval[1]        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 33    ; 33   ;
+; Unconstrained Input Port Paths  ; 288   ; 288  ;
+; Unconstrained Output Ports      ; 19    ; 19   ;
+; Unconstrained Output Port Paths ; 49    ; 49   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Oct 07 16:44:21 2014
+Info: Command: quartus_sta ALU -c ALU
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 16 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ALU.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name opval[1] opval[1]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 opval[1] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 408 megabytes
+    Info: Processing ended: Tue Oct 07 16:44:25 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

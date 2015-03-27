@@ -1,0 +1,36 @@
+module controlpath;
+	 
+wire [15:0]to_ctrlpth;
+wire N, P, Z;
+reg pc_mux, sext_mux, dr_in_mux_control, mdr_mux_ctrl, alu_control,
+			 load_pc, mar_mux,  pc_addr_mux_ctrl, genCC, w,Reg_C, reset, load_mdr, sext8_ctrl;
+
+reg L, S, word; //to memory
+wire done; //from memory
+	 
+controlpath a(.sr1_out(A1) , .sr2_out(A2), .sr1(sr1), .sr2(sr2), .dr(dr), .dr_in(dr_in) , .Write(wr), .clk(clock), .rst(reset) );
+
+    initial begin
+        $dumpfile("regfile.vcd");
+        $dumpvars(0, a);
+        $monitor("%g RESET ON SR1:%d, SR2:%d, dr:%d, SR1_out:%d, SR2_out:%d, dr_in:%d, Reset=%d, Write=%d, Clock=%d", $time,sr1,sr2,dr,A1,A2,dr_in,reset, wr, clock);
+		#5 reset = 1; wr=0;
+		
+		
+        //reset all values to zero
+		
+		#5 reset =0; wr=1; sr1 = 3'b000; sr2 = 3'b001; dr = 3'b111; dr_in = 16'd23; 
+		$display("%g SR1:%d, SR2:%d, dr:%d, SR1_out:%d, SR2_out:%d, dr_in:%d, Reset=%d, Write=%d, Clock=%d", $time,sr1,sr2,dr,A1,A2,dr_in,reset, wr, clock);
+		
+		#5 reset =0; wr=1;sr1 = 3'b000; sr2 = 3'b111; dr = 3'b111; dr_in = 16'd23; 
+		$display("%g SR1:%d, SR2:%d, dr:%d, SR1_out:%d, SR2_out:%d, dr_in:%d, Reset=%d, Write=%d, Clock=%d", $time,sr1,sr2,dr,A1,A2,dr_in,reset, wr, clock);
+		
+        #5 wr = 0;
+        #5 $display("done"); $finish;
+    end
+
+    always begin
+        #2 clock=~clock; // tick
+    end
+	 
+endmodule
